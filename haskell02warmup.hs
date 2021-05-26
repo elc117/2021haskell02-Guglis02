@@ -19,3 +19,6 @@ doutor nome = (take 2 nome) == "Dr"
    
 adulto :: Int -> Bool
 adulto idade = idade >= 18
+
+filter (\(_,idade) -> idade > 60) [("Fulano", 32),("Beltrano", 64)] -- aqui temos 2 tuplas (String,Int)
+sejamFelizes (map (\(nome,_) -> nome) [("Fulano", 32),("Beltrano", 64)]) 
