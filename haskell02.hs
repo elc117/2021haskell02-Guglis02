@@ -23,7 +23,7 @@ idadesEm :: [Int] -> Int -> [Int]
 idadesEm lista ano = map (\lista -> ano - lista) lista 
 
 changeNames :: [String] -> [String]
-changeNames strl = map (\str -> if head str == 'A' then str ++ "Super " else str) strl
+changeNames strl = map (\str -> if head str == 'A' then "Super " ++ str else str) strl
 
 onlyShorts :: [String] -> [String]
 onlyShorts strl = filter (\str -> length str < 5) strl
